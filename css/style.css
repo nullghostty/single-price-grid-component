@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background: hsl(204, 43%, 93%);
+}
+
+.pricing-card__header {
+  background: hsl(0, 100%, 100%);
+}
+
+.pricing-card__subscription {
+  background: hsl(179, 62%, 43%);
+}
+
+.pricing-card__features {
+  background: hsl(179, 48%, 52%);
+}
+
+body,
+.pricing-card {
+  display: grid;
+}
+
+body {
+  place-items: center;
+  height: 100vh;
+}
+
+.pricing-card {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.pricing-card__header {
+  grid-column: 1/-1;
+}
+
+.pricing-card__subscription {
+  grid-column: 1;
+}
+
+.pricing-card__features {
+  grid-column: 2;
+}
+
+@media (max-width: 768px) {
+  .pricing-card {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  .pricing-card__header,
+  .pricing-card__subscription,
+  .pricing-card__features {
+    grid-column: 1;
+  }
+}
+/* The pricing-card container has border-radius, but since grid sections have solid backgrounds,
+   individual border-radius on sections is needed to round the visible corners of the card. */
+.pricing-card__header {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.pricing-card__subscription {
+  border-radius: 0 0 0 0.5rem;
+}
+
+.pricing-card__features {
+  border-radius: 0 0 0.5rem 0;
+}
+
+/*# sourceMappingURL=style.css.map */

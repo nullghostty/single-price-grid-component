@@ -1,0 +1,13 @@
+/* The pricing-card container has border-radius, but since grid sections have solid backgrounds,
+   individual border-radius on sections is needed to round the visible corners of the card. */
+.pricing-card__header {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.pricing-card__subscription {
+  border-radius: 0 0 0 0.5rem;
+}
+
+.pricing-card__features {
+  border-radius: 0 0 0.5rem 0;
+}

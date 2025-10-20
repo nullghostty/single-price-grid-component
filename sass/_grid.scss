@@ -1,0 +1,39 @@
+body,
+.pricing-card {
+  display: grid;
+}
+
+body {
+  place-items: center;
+  height: 100vh;
+}
+
+.pricing-card {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.pricing-card__header {
+  grid-column: 1 / -1;
+}
+
+.pricing-card__subscription {
+  grid-column: 1;
+}
+
+.pricing-card__features {
+  grid-column: 2;
+}
+
+@media (max-width: 768px) {
+  .pricing-card {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .pricing-card__header,
+  .pricing-card__subscription,
+  .pricing-card__features {
+    grid-column: 1;
+  }
+}
