@@ -1,0 +1,17 @@
+{
+  "name": "single-price-grid-component",
+  "version": "1.0.0",
+  "description": "![Design preview for the Single price grid component coding challenge](preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server . -p 3000 -c-1",
+    "dev": "http-server . -p 3000 --cors -o -c-1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
