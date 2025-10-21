@@ -7,16 +7,42 @@ $green-400: hsl(71 73% 54%);
 
 body {
   background: $teal-100;
+  color: $white;
 }
 
 .pricing-card__header {
   background: $white;
+
+  .pricing-card__title {
+    color: $teal-500;
+  }
+
+  .pricing-card__subtitle {
+    color: $green-400;
+  }
+
+  .pricing-card__description {
+    color: $gray-500;
+  }
 }
 
 .pricing-card__subscription {
   background: $teal-500;
+
+  .pricing-card__price-reocurrence {
+    opacity: 0.5;
+  }
+
+  .pricing-card__cta {
+    background: $green-400;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .pricing-card__features {
   background: $teal-400;
+}
+
+.pricing-card__feature-list {
+  opacity: 0.75;
 }

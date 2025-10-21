@@ -3,14 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend Mentor | Single Price Grid Component</title>
+    <title>Single Price Grid Component</title>
     <link rel="stylesheet" type="" href="css/style.css" />
   </head>
   <body>
     <main class="pricing-card">
       <section class="pricing-card__header">
         <h1 class="pricing-card__title">Join our community</h1>
-        <h2 class="pricing-card__subtitle">30-day, hassle-free money back guarantee</h2>
+        <h2 class="pricing-card__subtitle">
+          30-day, hassle-free money back guarantee
+        </h2>
         <p class="pricing-card__description">
           Gain access to our full library of tutorials along with expert code
           reviews. Perfect for any developers who are serious about honing their
@@ -19,23 +21,36 @@
       </section>
 
       <section class="pricing-card__subscription">
-        <h2 class="pricing-card__subscription-title">Monthly Subscription</h2>
-        <p class="pricing-card__price"><span class="pricing-card__price-amount">&dollar; 29</span> per month</p>
-        <p class="pricing-card__subscription-description">Full access for less than &dollar;1 a day</p>
-        <button class="pricing-card__cta">Sign Up</button>
+        <div class="pricing-card__subscription-content">
+          <h2 class="pricing-card__subscription-title">Monthly Subscription</h2>
+          <p class="pricing-card__price">
+            &dollar; 29
+            <span class="pricing-card__price-reocurrence">per month</span>
+          </p>
+          <p class="pricing-card__subscription-description">
+            Full access for less than &dollar;1 a day
+          </p>
+          <button class="pricing-card__cta">Sign Up</button>
+        </div>
       </section>
 
       <section class="pricing-card__features">
-        <h2 class="pricing-card__features-title">Why Us</h2>
-        <ul class="pricing-card__feature-list">
-          <li class="pricing-card__feature-item">Tutorials by industry experts</li>
-          <li class="pricing-card__feature-item">Peer &amp; expert code review</li>
-          <li class="pricing-card__feature-item">Coding exercises</li>
-          <li class="pricing-card__feature-item">Access to our GitHub repos</li>
-          <li class="pricing-card__feature-item">Community forum</li>
-          <li class="pricing-card__feature-item">Flashcard decks</li>
-          <li class="pricing-card__feature-item">New videos every week</li>
-        </ul>
+        <div class="pricing-card__features-content">
+          <h2 class="pricing-card__features-title">Why Us</h2>
+          <ul class="pricing-card__feature-list">
+            <li class="pricing-card__feature-item">
+              Tutorials by industry experts
+            </li>
+            <li class="pricing-card__feature-item">
+              Peer &amp; expert code review
+            </li>
+            <li class="pricing-card__feature-item">Coding exercises</li>
+            <li class="pricing-card__feature-item">Access to our GitHub repos</li>
+            <li class="pricing-card__feature-item">Community forum</li>
+            <li class="pricing-card__feature-item">Flashcard decks</li>
+            <li class="pricing-card__feature-item">New videos every week</li>
+          </ul>
+        </div>
       </section>
     </main>
   </body>

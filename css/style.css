@@ -14,24 +14,54 @@ ul {
   padding: 0;
 }
 
+button {
+  font: inherit;
+  color: inherit;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 body {
   font-family: "Karla", sans-serif;
 }
 
 body {
   background: hsl(204, 43%, 93%);
+  color: hsl(0, 100%, 100%);
 }
 
 .pricing-card__header {
   background: hsl(0, 100%, 100%);
 }
+.pricing-card__header .pricing-card__title {
+  color: hsl(179, 62%, 43%);
+}
+.pricing-card__header .pricing-card__subtitle {
+  color: hsl(71, 73%, 54%);
+}
+.pricing-card__header .pricing-card__description {
+  color: hsl(218, 22%, 67%);
+}
 
 .pricing-card__subscription {
   background: hsl(179, 62%, 43%);
 }
+.pricing-card__subscription .pricing-card__price-reocurrence {
+  opacity: 0.5;
+}
+.pricing-card__subscription .pricing-card__cta {
+  background: hsl(71, 73%, 54%);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
 
 .pricing-card__features {
   background: hsl(179, 48%, 52%);
+}
+
+.pricing-card__feature-list {
+  opacity: 0.75;
 }
 
 body,
@@ -72,18 +102,52 @@ body {
     grid-column: 1;
   }
 }
+.pricing-card {
+  max-width: 39.6875rem;
+  min-width: 19.4375rem;
+  margin: 1.5625rem 2rem;
+}
+
 /* The pricing-card container has border-radius, but since grid sections have solid backgrounds,
    individual border-radius on sections is needed to round the visible corners of the card. */
 .pricing-card__header {
+  padding: 40px;
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.pricing-card__header,
+.pricing-card__subscription,
+.pricing-card__features {
+  padding: 40px;
 }
 
 .pricing-card__subscription {
   border-radius: 0 0 0 0.5rem;
 }
+.pricing-card__subscription .pricing-card__subscription-content {
+  width: 14.875rem;
+}
+.pricing-card__subscription .pricing-card__cta {
+  width: 100%;
+  padding: 8px;
+  border-radius: 0.3125rem;
+}
 
 .pricing-card__features {
   border-radius: 0 0 0.5rem 0;
+}
+
+.pricing-card__features-title {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .pricing-card__subscription {
+    border-radius: 0;
+  }
+  .pricing-card__features {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
