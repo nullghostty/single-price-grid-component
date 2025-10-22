@@ -114,6 +114,12 @@ body {
   padding: 40px;
   border-radius: 0.5rem 0.5rem 0 0;
 }
+.pricing-card__header .pricing-card__title {
+  margin-bottom: 24px;
+}
+.pricing-card__header .pricing-card__subtitle {
+  margin-bottom: 8px;
+}
 
 .pricing-card__header,
 .pricing-card__subscription,
@@ -137,6 +143,7 @@ body {
   border-radius: 0 0 0.5rem 0;
 }
 
+.pricing-card__subscription-title,
 .pricing-card__features-title {
   margin-bottom: 16px;
 }
