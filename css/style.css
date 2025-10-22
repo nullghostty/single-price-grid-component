@@ -184,6 +184,11 @@ body {
   border-radius: 0.3125rem;
   margin-top: auto;
 }
+@media (max-width: 768px) {
+  .pricing-card__subscription .pricing-card__cta {
+    margin-top: 2rem;
+  }
+}
 
 .pricing-card__features {
   border-radius: 0 0 0.5rem 0;
