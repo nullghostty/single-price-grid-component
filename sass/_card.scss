@@ -32,12 +32,17 @@
 
   .pricing-card__subscription-content {
     width: 14.875rem;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   .pricing-card__cta {
     width: 100%;
     padding: variables.$spacing-100;
     border-radius: 0.3125rem;
+    margin-top: auto;
   }
 }
 

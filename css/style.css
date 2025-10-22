@@ -25,6 +25,48 @@ button {
 
 body {
   font-family: "Karla", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: -0.01563rem;
+}
+
+h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: -0.01563rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 165%;
+  letter-spacing: -0.03125rem;
+}
+
+li {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 145%;
+}
+
+.pricing-card__price {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: -0.025rem;
+}
+
+.pricing-card__price-reocurrence {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 165%;
+  letter-spacing: -0.03125rem;
 }
 
 body {
@@ -132,11 +174,15 @@ body {
 }
 .pricing-card__subscription .pricing-card__subscription-content {
   width: 14.875rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .pricing-card__subscription .pricing-card__cta {
   width: 100%;
   padding: 8px;
   border-radius: 0.3125rem;
+  margin-top: auto;
 }
 
 .pricing-card__features {

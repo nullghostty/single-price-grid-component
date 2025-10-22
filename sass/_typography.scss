@@ -2,6 +2,47 @@
 
 $primary-font: "Karla", sans-serif;
 
+@mixin karla-bold($size: 1.5rem, $spacing: -0.01563rem) {
+  font-size: $size;
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: $spacing;
+}
+
+@mixin body-text() {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 165%;
+  letter-spacing: -0.03125rem;
+}
+
 body {
   font-family: $primary-font;
+  font-style: normal;
+}
+
+h1 {
+  @include karla-bold();
+}
+
+h2 {
+  @include karla-bold($size: 1.125rem);
+}
+
+p {
+  @include body-text();
+}
+
+li {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 145%;
+}
+
+.pricing-card__price {
+  @include karla-bold($size: 2rem, $spacing: -0.025rem);
+}
+
+.pricing-card__price-reocurrence {
+  @include body-text();
 }
